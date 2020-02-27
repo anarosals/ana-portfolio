@@ -19,6 +19,7 @@ import all_classes from '../../assets/all_classes.png';
 import sign_up from '../../assets/sign_up.png';
 import add_class from '../../assets/add_class.png';
 
+
 const FitnessStudy = () => {
   return (
     <div>
