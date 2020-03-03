@@ -11,6 +11,8 @@ import ContactForm from './components/shared/ContactForm';
 import Footer from './components/shared/Footer';
 import Projects from './components/projectsPage/Projects';
 import FitnessStudy from './components/caseStudies/FitnessStudy';
+import AirbnbStudy from './components/caseStudies/AirbnbStudy'
+import { functionTypeAnnotation } from '@babel/types';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/about' component={AboutPage} />
         <Route exact path='/fitstudy' component={FitnessStudyPage} />
+        <Route exact path='/airbnbstudy' component={AirbnbStudyPage}/>
         {/* <Route exact path='/projects' component={Projects} /> */}
         <Route component={LandingPage} />
       </Switch>
@@ -56,5 +59,16 @@ function FitnessStudyPage(props) {
     </div>
   );
 }
+
+function AirbnbStudyPage(props){
+  return(
+    <div>
+      <NavBar {...props}/>
+      <AirbnbStudy/>
+      <Footer/>
+    </div>
+  )
+}
+
 
 export default App;
